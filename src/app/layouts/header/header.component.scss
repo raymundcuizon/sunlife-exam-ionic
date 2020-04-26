@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+.greetings{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+}
+.parent-div{
+  background: #dac034;
+  border-radius: 85%/0 0 70px 70px;
+}
+ion-grid[no-padding] {
+  & > ion-row {
+      padding: 0;
+
+      & > ion-col {
+          padding: 0;
+      }
+  }
+}
+.icon-size {
+  font-size: 30px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+.background-image{
+  background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../../../assets/header-bg.jpeg) 100% 100% no-repeat;
+  background-size:100% 100%;
+  color:#fff;
+  border-radius: 85%/0 0 70px 70px;
+  padding-bottom: 30px;
+}
+.count-badge{
+  position: absolute;
+  right: 4px;
+  font-size: 9px;
+}
+
+/* NAV */
+.nav-icons{
+  padding: 15px 0 20px 0;
+  ion-icon{
+      font-size: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+  }
+  label{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+  }
+}

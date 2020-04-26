@@ -1,0 +1,42 @@
+<div class="parent-div">
+  <ion-row class="background-image">
+    <ion-col size="2">
+      <ion-icon class="icon-size" name="reorder-two-outline"></ion-icon>
+    </ion-col>
+
+    <ion-col size="8">  
+      <div class="ion-padding-top">
+        <ion-avatar class="center">
+          <img [src]="userinfo.img" class="avatar-img">
+        </ion-avatar>
+      </div>
+      <div>
+        <p class="center greetings">{{ greetings }}</p>
+      </div>
+      <div>
+        <h1 class="center full-name">{{ userinfo.name }}</h1>
+      </div>
+    </ion-col>
+
+    <ion-col size="2">
+      <div class="ion-float-right">
+        <ion-icon class="icon-size" name="notifications-outline"></ion-icon>
+        <ion-badge class="notification-badge count-badge" color="danger">{{ notification }}</ion-badge>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="nav-icons">
+    <ion-col size="4" routerLink="/">
+      <ion-icon name="card-outline"></ion-icon>
+      <label>Manage ILAS Funds</label>
+    </ion-col>
+    <ion-col size="4" routerLink="/">
+      <ion-icon name="hand-left-outline"></ion-icon>
+       <label>Claims</label>
+    </ion-col>
+    <ion-col size="4" routerLink="/policyservicing">
+      <ion-icon name="document-text-outline"></ion-icon>
+      <label>Policy Servicing</label>
+    </ion-col>
+  </ion-row>
+</div>

@@ -1,0 +1,44 @@
+<ion-row>
+  <ion-col size="12" routerLink="/policies">
+    <h1>Coverage from 4 Policies <ion-icon name="chevron-forward-outline"></ion-icon></h1>
+  </ion-col>
+  <ion-col size="6" class="coverage">
+    <ion-fab-button color="danger">
+      <ion-icon name="fitness-outline"></ion-icon>
+    </ion-fab-button>
+    <div class="coverage-label">
+      <strong>Life</strong>
+      <p>{{ coverage.life }}</p>
+    </div>
+  </ion-col>
+  <ion-col size="6" class="coverage">
+    <ion-fab-button color="dark">
+      <ion-icon name="git-network-outline"></ion-icon>
+    </ion-fab-button>
+    <div class="coverage-label">
+      <strong>Critical Illness</strong>
+      <p>{{ coverage.critical }}</p>
+    </div>
+  </ion-col>
+  <ion-col size="6" class="coverage">
+    <ion-fab-button color="primary">
+      <ion-icon name="business-outline"></ion-icon>
+    </ion-fab-button>
+    <div class="coverage-label">
+      <strong>Medical & Hosp.</strong>
+      <p>{{ coverage.medical }}</p>
+    </div>
+  </ion-col>
+  <ion-col size="6" class="coverage">
+    <ion-fab-button color="warning">
+      <ion-icon name="medkit-outline"></ion-icon>
+    </ion-fab-button>
+    <div class="coverage-label">
+      <strong>Accident</strong>
+      <p>{{ coverage.accident }}</p>
+    </div>
+  </ion-col>
+  <ion-col size="12">
+    <p class="text-muted">*Additional coverage detailed in provision</p>
+  </ion-col>
+</ion-row>

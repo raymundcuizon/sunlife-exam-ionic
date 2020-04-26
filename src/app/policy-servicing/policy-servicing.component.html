@@ -1,0 +1,30 @@
+<ion-content scroll="false">
+  <app-header></app-header>
+  <ion-card  *ngFor="let policyServ of policyServicing">
+
+    <ion-item lines="none">
+      <ion-icon class="icon-color" slot="start" name="{{  policyServ.icon }}"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h3>{{ policyServ.title }}</h3>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  
+    <ion-card *ngFor="let policy of policyServ.policies; let i = index;" >
+      <ion-item >
+        <ion-icon  (click)="expandItem(policy)"  slot="end" name="chevron-forward-outline"></ion-icon>
+        <ion-label>{{ policy.title }}</ion-label>
+      </ion-item>
+    
+      <ion-card-content [hidden]="!policy.expanded" *ngFor="let pval of policy.values">
+        <ion-text>{{ pval.title }} - {{ pval.value }}</ion-text>
+        </ion-card-content>
+    </ion-card>
+    
+  </ion-card>
+
+  <ion-icon class="to-top" name="chevron-up-outline" (click)="ScrollToTop()"></ion-icon>
+
+
+</ion-content>
